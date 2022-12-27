@@ -57,20 +57,4 @@ public abstract class MapcolorMixin {
         return new Block(FabricBlockSettings.copyOf(settings).mapColor(CursedMapColor.OTHERBLACK));
     }
 
-//    @ModifyArgs(at = @At(value = "INVOKE", target = "Lnet/minecraft/block/Blocks;register(Ljava/lang/String;Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;"),method = "<clinit>()V")
-//    private static void inject(Args args){
-//        if(Objects.equals(args.get(0), "black_concrete")){
-//            args.set(0, "black_concrete");
-//            args.set(1, new Block(AbstractBlock.Settings.of(Material.STONE, CursedMapColor.TRUEBLACK).requiresTool().strength(1.8F)));
-//        }
-//        if(Objects.equals(args.get(0), "black_wool")){
-//            args.set(0, "black_wool");
-//            args.set(1, new Block(AbstractBlock.Settings.of(Material.WOOL, CursedMapColor.OTHERBLACK).strength(0.8F).sounds(BlockSoundGroup.WOOL)));
-//        }
-//        CursedMapColor.LOGGER.debug("aa");
-//    }
-//    @Inject(at = @At("RETURN"), method = "<clinit>()V")
-//    private static void injecth(CallbackInfo ci){
-//
-//    }
 }
